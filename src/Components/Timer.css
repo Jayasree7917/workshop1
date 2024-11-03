@@ -1,0 +1,135 @@
+.flip-clock {
+  text-align: center;
+  perspective: 600px; /* Perspective for 3D effect */
+  margin: 20px 0; /* Adjust margin as needed */
+}
+
+.flip-clock__piece {
+  display: inline-block;
+  margin-right: 26px; /* Space between pieces */
+}
+
+.flip-clock__slot {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #FFF;
+  font-family: sans-serif;
+  display: block;
+}
+
+.flip-card {
+  display: block;
+  position: relative;
+  padding-bottom: 0.72em; /* Space for the bottom part */
+  font-size: 3.6rem; /* Font size for the flip card */
+  line-height: 0.95;
+  transform-style: preserve-3d; /* Enable 3D transformations */
+  transition: transform 0.6s; /* Smooth transition */
+}
+
+.flip-card.flip {
+  animation: flip 0.6s forwards; /* Trigger the flip animation */
+}
+
+.flip-card__top,
+.flip-card__bottom,
+.flip-card__back-bottom,
+.flip-card__back::before,
+.flip-card__back::after {
+  display: block;
+  height: 0.72em; /* Height of each card piece */
+  color: #ccc; /* Color for the top part */
+  background: #222; /* Background color */
+  padding: 0.23em 0.25em 0.4em; /* Padding for card pieces */
+  border-radius: 0.15em 0.15em 0 0; /* Rounded corners */
+  backface-visibility: hidden; /* Hide back face */
+  transform-style: preserve-3d; /* Preserve 3D */
+  width: 1.8em; /* Width of each card piece */
+}
+
+.flip-card__bottom,
+.flip-card__back-bottom {
+  color: #FFF; /* Color for the bottom part */
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 0; /* Align to the left */
+  border-top: solid 1px #000; /* Top border */
+  background: #393939; /* Background color */
+  border-radius: 0 0 0.15em 0.15em; /* Rounded corners */
+  pointer-events: none; /* Disable pointer events */
+  overflow: hidden; /* Hide overflow */
+  z-index: 2; /* Layering */
+}
+
+.flip-card__back-bottom {
+  z-index: 1; /* Layering */
+}
+
+.flip-card__bottom::after,
+.flip-card__back-bottom::after {
+  display: block;
+  margin-top: -0.72em; /* Adjust for overlap */
+}
+
+.flip-card__back::before,
+.flip-card__bottom::after,
+.flip-card__back-bottom::after {
+  content: attr(data-value); /* Display the value */
+}
+
+.flip-card__back {
+  position: absolute;
+  top: 0; /* Align to the top */
+  height: 100%; /* Full height */
+  left: 0%; /* Align to the left */
+  pointer-events: none; /* Disable pointer events */
+}
+
+.flip-card__back::before {
+  position: relative;
+  overflow: hidden; /* Hide overflow */
+  z-index: -1; /* Layering */
+}
+
+.flip .flip-card__back::before {
+  z-index: 1; /* Layering */
+  animation: flipTop 0.3s cubic-bezier(.37,.01,.94,.35);
+  animation-fill-mode: both; /* Maintain state after animation */
+  transform-origin: center bottom; /* Origin for rotation */
+}
+
+.flip .flip-card__bottom {
+  transform-origin: center top; /* Origin for rotation */
+  animation-fill-mode: both; /* Maintain state after animation */
+  animation: flipBottom 0.6s cubic-bezier(.15,.45,.28,1);
+}
+
+@keyframes flipTop {
+  0% {
+    transform: rotateX(0deg);
+    z-index: 2; /* Layering */
+  }
+  0%, 99% {
+    opacity: 1; /* Fully visible */
+  }
+  100% {
+    transform: rotateX(-90deg); /* Rotate */
+    opacity: 0; /* Fade out */
+  }
+}
+
+@keyframes flipBottom {
+  0%, 50% {
+    z-index: -1; /* Layering */
+    transform: rotateX(90deg); /* Rotate */
+    opacity: 0; /* Fade out */
+  }
+  51% {
+    opacity: 1; /* Fully visible */
+ }
+  100% {
+    opacity: 1; /* Fully visible */
+    transform: rotateX(0deg); /* Rotate back */
+    z-index: 5; /* Layering */
+  }
+}

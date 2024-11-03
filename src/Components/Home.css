@@ -1,0 +1,159 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  height: 60vh;
+  overflow-x: hidden;
+  background-size: cover;
+}
+
+/* Main Container Styling */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: url('https://github.com/Suke2004/CCA-RnD-website/blob/main/IMG-20241027-WA0163.jpg?raw=true') no-repeat center center fixed;
+  background-size: cover;
+  flex: 1; /* Allow the home container to grow and fill available space */
+}
+
+/* Keyframes Animation */
+@keyframes gradientAnimation {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Main Content Styling */
+.main {
+  display: flex;
+  flex-direction: column; /* Column layout for better responsiveness */
+  align-items: center;
+  gap: 0;
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 10px 15px rgba(0, 0, 0, 0.3);
+  padding: 60px;
+  margin: 30px 0; /* Adjust margin if needed */
+  width: 90%;
+  max-width: 700px;
+  color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.main:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6), 0 15px 20px rgba(0, 0, 0, 0.5);
+  animation: pulse 1.5s infinite;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Heading Styling */
+.heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.heading h1 {
+  font-size: 3rem; /* Font size adjusted for better scaling */
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8);
+  margin: 0;
+  letter-spacing: 2.4px;
+}
+
+.heading p {
+  font-size: 1.3rem; /* Font size maintained for readability */
+  font-family: 'Arial', sans-serif;
+  color: #afbecb;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Countdown Section Styling */
+.count {
+  backdrop-filter: blur(5px);
+  background: rgba(19, 18, 18, 0.7);
+  margin-top: 30px;
+  padding: 20px;
+  width: 100vw;
+  height: auto; /* Corrected height */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .heading h1 {
+    font-size: 2.5rem; /* Responsive font size */
+  }
+  
+  .heading p {
+    font-size: 1.1rem; /* Adjust paragraph size for smaller screens */
+  }
+
+  .main {
+    padding: 40px; /* Reduce padding for smaller screens */
+  }
+
+  .countdown h1 {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading h1 {
+    font-size: 2.3rem; /* Further responsive font size */
+  }
+
+  .heading p {
+    font-size: 0.9rem; /* Further adjust paragraph size */
+  }
+
+  .main {
+    padding: 23px; /* Further reduce padding */
+  }
+
+  .count {
+    flex-direction: column;
+  }
+
+  .countdown h1 {
+    font-size : 1.1rem;
+  }
+}
+
+.count {
+  flex-direction: column;
+}
+
+.count h1 {
+  font-size: 2.2rem;
+  color: aliceblue;
+  font-family: math;
+}
