@@ -15,7 +15,7 @@ html, body {
 
 /* Footer styles */
 .footer {
-  background: linear-gradient(135deg, rgba(94, 29, 29, 0.88), #282c34, rgba(0, 0, 0, 0.7));
+  background: linear-gradient(135deg, rgba(29, 30, 94, 0.88), rgba(0, 0, 0, 0.7));
   color: #fff;
   padding: 40px 0;
   margin: 0; /* Ensure no extra margin */
@@ -43,7 +43,7 @@ html, body {
 .footer-section-links ul li:hover,
 .footer-section-contact span:hover,
 .icon-message:hover {
-  color:red;
+  color:rgb(78, 78, 174);
 }
 
 .icon-home {
@@ -78,7 +78,7 @@ html, body {
   display: block;
   width: 60px;
   height: 2.6px;
-  background: rgb(202, 52, 53);
+  background: rgb(78, 78, 174);
   bottom: -10px;
   left: 0;
 }

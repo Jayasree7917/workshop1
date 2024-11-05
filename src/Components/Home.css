@@ -72,6 +72,7 @@ body {
 .heading h1 {
   font-size: 3rem; /* Font size adjusted for better scaling */
   font-weight: 700;
+  font-family: sans-serif;
   color: #ffffff;
   text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8);
   margin: 0;
@@ -80,7 +81,7 @@ body {
 
 .heading p {
   font-size: 1.3rem; /* Font size maintained for readability */
-  font-family: 'Arial', sans-serif;
+  font-family: sans-serif;
   color: #afbecb;
   margin-top: 20px;
   width: 100%;
@@ -155,5 +156,5 @@ body {
 .count h1 {
   font-size: 2.2rem;
   color: aliceblue;
-  font-family: math;
+  font-family: sans-serif;
 }
