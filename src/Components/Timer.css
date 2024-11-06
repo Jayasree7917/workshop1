@@ -10,7 +10,7 @@
 }
 
 .flip-clock__slot {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   line-height: 1.5;
   color: #FFF;
   font-family: sans-serif;
@@ -21,7 +21,7 @@
   display: block;
   position: relative;
   padding-bottom: 0.72em; /* Space for the bottom part */
-  font-size: 3.6rem; /* Font size for the flip card */
+  font-size: 3.3rem; /* Font size for the flip card */
   line-height: 0.95;
   transform-style: preserve-3d; /* Enable 3D transformations */
   transition: transform 0.6s; /* Smooth transition */
@@ -131,5 +131,24 @@
     opacity: 1; /* Fully visible */
     transform: rotateX(0deg); /* Rotate back */
     z-index: 5; /* Layering */
+  }
+}
+
+@media (max-width: 600px){
+  .flip-clock__slot {
+    font-size: 1.1rem;
+  }
+  
+  .flip-card {
+    font-size: 2.7rem; /* Font size for the flip card */
+  }
+}
+@media (max-width: 480px){
+  .flip-clock__slot {
+    font-size: 1rem;
+  }
+  
+  .flip-card {
+    font-size: 2.5rem; /* Font size for the flip card */
   }
 }

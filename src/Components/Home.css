@@ -103,11 +103,11 @@ body {
 
 @media (max-width: 768px) {
   .heading h1 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
   
   .heading p {
-    font-size: 1.1rem; 
+    font-size: 1.05rem; 
   }
 
   .main {
@@ -115,17 +115,17 @@ body {
   }
 
   .countdown h1 {
-    font-size: 1.35rem;
+    font-size: 1.15rem;
   }
 }
 
 @media (max-width: 480px) {
   .heading h1 {
-    font-size: 2.3rem; 
+    font-size: 2rem;
   }
 
   .heading p {
-    font-size: 0.9rem; 
+    font-size: 0.7rem;
   }
 
   .main {
@@ -137,7 +137,7 @@ body {
   }
 
   .countdown h1 {
-    font-size : 1.1rem;
+    font-size : 0.95rem;
   }
 }
 
@@ -146,7 +146,7 @@ body {
 }
 
 .count h1 {
-  font-size: 2.2rem;
+  font-size: 1.9rem;
   color: aliceblue;
   font-family: sans-serif;
 }
