@@ -67,7 +67,7 @@ html, body {
   margin-bottom: 16px;
   font-size: 24.6px;
   font-weight: 650;
-  font-family: unset;
+  font-family: sans-serif;
   letter-spacing: 1.2px;
 }
 
@@ -165,6 +165,7 @@ html, body {
 .footer-section-social h2{
   margin-left: -90px;
 }
+
 .social-icon { 
   gap: 10px; /* Reduce gap for smaller screens */
   margin-top: 6px;
@@ -182,23 +183,23 @@ html, body {
 .footer-section-links h2{
   margin-left: -120px;
   margin-top: -16px;
-  font-size: 26.8px;
+  font-size: 1.3em;
 }
 .footer-section-links ul li {
   display: flex;
   align-items: center; 
   margin-left: -126px;
-  font-size: 22.8px;
+  font-size: 1.2em;
 }
 .footer-section-contact h2{
   margin-left: 34px;
-  font-size: 26.8px;
+  font-size: 1.3em;
 }
 .footer-section-contact p{
-  font-size: 20.8px;
+  font-size: 1em;
 }
 .footer-section-contact span{
-  font-size: 20.8px;
+  font-size: 1em;
 }
 .footer-brand a{
   margin-left: 1rem;
