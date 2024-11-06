@@ -11,7 +11,7 @@ export const Home = () => {
       <section className="main">
        
         <div className="heading">
-          <h1>ML</h1>
+          <h1>MACHINE LEARNING</h1>
           <h1>WORKSHOP</h1>
           <p>
             AIML enables the creation of intelligent chatbots that 
