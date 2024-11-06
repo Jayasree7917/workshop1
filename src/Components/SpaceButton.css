@@ -1,207 +1,141 @@
-/* General Button Styling */
-.btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 16rem; /* Default size for larger screens */
-  height: 4rem;
-  overflow: hidden;
-  background-size: 300% 300%;
+.regbutton {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  color: #0f1923;
   cursor: pointer;
-  backdrop-filter: blur(1rem);
-  border-radius: 5rem;
-  transition: transform 0.5s, background-color 0.5s; /* More specific transition for hover effect */
-  animation: gradient_301 5s ease infinite;
-  border: double 4px transparent;
-  background-image: linear-gradient(#212121, #212121),
-    linear-gradient(137.48deg, #ffdb3b 10%, #fe53bb 45%, #8f51ea 67%, #0044ff 87%);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  margin: 0; /* Ensure no margin */
-}
-
-/* Stars Background */
-#container-stars {
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  transition: 0.5s;
-  backdrop-filter: blur(1rem);
-  border-radius: 5rem;
-}
-
-/* Strong Text Styling */
-strong {
-  z-index: 2;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 24px;
-  letter-spacing: 5px;
-  color: #ffffff;
-  text-shadow: 0 0 4px rgb(92, 90, 90);
-}
-
-/* Glow Effect */
-#glow {
-  position: absolute;
-  display: flex;
-  width: 12rem;
-}
-
-/* Circle Animation */
-.circle {
-  width: 100%;
-  height: 30px;
-  filter: blur(2rem);
-  animation: pulse_3011 4s infinite;
-  z-index: -1;
-}
-
-.circle:nth-of-type(1) {
-  background: rgba(254, 83, 186, 0.636);
-}
-
-.circle:nth-of-type(2) {
-  background: rgba(142, 81, 234, 0.704);
-}
-
-/* Button Hover Effects */
-.btn:hover #container-stars {
-  z-index: 1;
-  background-color: #212121;
-}
-
-.btn:hover {
-  transform: scale(1.1);
-}
-
-/* Button Active State */
-.btn:active {
-  border: double 4px #fe53bb;
-  animation: none;
-}
-
-.btn:active .circle {
-  background: #fe53bb;
-}
-
-/* Stars Animation */
-#stars {
   position: relative;
-  background: transparent;
-  width: 200rem;
-  height: 200rem;
+  padding: 8px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  transition: all .15s ease;
 }
 
-#stars::after {
-  content: "";
+.regbutton::before,
+.regbutton::after {
+  content: '';
+  display: block;
   position: absolute;
-  top: -10rem;
-  left: -100rem;
-  width: 100%;
-  height: 100%;
-  animation: animStarRotate 90s linear infinite;
-  background-image: radial-gradient(#ffffff 1px, transparent 1%);
-  background-size: 50px 50px;
+  right: 0;
+  left: 0;
+  height: calc(50% - 5px);
+  border: 1.4px solid #7D8082;
+  transition: all 2s ease;
 }
 
-#stars::before {
-  content: "";
+.regbutton::before {
+  top: 0;
+  border-bottom-width: 0;
+}
+
+.regbutton::after {
+  bottom: 0;
+  border-top-width: 0;
+}
+
+.regbutton:active,
+.regbutton:focus {
+  outline: none;
+}
+
+.regbutton:active::before,
+.regbutton:active::after {
+  right: 3px;
+  left: 3px;
+}
+
+.regbutton:active::before {
+  top: 3px;
+}
+
+.regbutton:active::after {
+  bottom: 3px;
+}
+
+.regbutton_lg {
+  position: relative;
+  display: block;
+  padding: 12.4px 24px;
+  color: #fff;
+  background-color: #0f1923;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+}
+
+.regbutton_lg::before {
+  content: '';
+  display: block;
   position: absolute;
   top: 0;
-  left: -50%;
-  width: 170%;
-  height: 500%;
-  animation: animStar 60s linear infinite;
-  background-image: radial-gradient(#ffffff 1px, transparent 1%);
-  background-size: 50px 50px;
-  opacity: 0.5;
+  left: 0;
+  width: 2px;
+  height: 2px;
+  background-color: #0f1923;
 }
 
-/* Star Animations */
-@keyframes animStar {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-135rem);
-  }
+.regbutton_lg::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  height: 4px;
+  background-color: #0f1923;
+  transition: all .2s ease;
 }
 
-@keyframes animStarRotate {
-  from {
-    transform: rotate(360deg);
-  }
-  to {
-    transform: rotate(0);
-  }
+.regbutton_sl {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  left: -8px;
+  width: 0;
+  background-color: #5059a5;
+  transform: skew(-15deg);
+  transition: all .2s ease;
 }
 
-/* Background Gradient Animation */
-@keyframes gradient_301 {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.regbutton_text {
+  position: relative;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1.4px;
 }
 
-/* Pulse Animation for Circles */
-@keyframes pulse_3011 {
-  0% {
-    transform: scale(0.75);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-  }
-  70% {
-    transform : scale(1);
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-  }
-  100% {
-    transform: scale(0.75);
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-  }
+.regbutton:hover {
+  color: #0f1923;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .btn {
-    width: 14rem; /* Reduce size for tablets */
-    height: 3.5rem;
-  }
+.regbutton:hover .regbutton_sl {
+  width: calc(100% + 15px);
+}
 
-  strong {
-    font-size: 20px; /* Adjust font size for smaller screens */
-  }
-
-  #glow {
-    width: 10rem; /* Adjust glow size */
-  }
-
-  .circle {
-    height: 25px; /* Smaller circle height */
-  }
+.regbutton:hover .regbutton_lg::after {
+  background-color: #fff;
 }
 
 @media (max-width: 480px) {
-  .btn {
-    width: 12rem; /* Reduce further for mobile */
-    height: 3rem;
+  .regbutton {
+    padding: 6px;
+    font-size: 12px;
   }
 
-  strong {
-    font-size: 18px; /* Further adjust font size */
+  .regbutton_lg {
+    padding: 8px 17px;
   }
 
-  #glow {
-    width: 8rem; /* Smaller glow size */
+  .regbutton_text {
+    font-size: 14px;
   }
 
-  .circle {
-    height: 20px; /* Further adjust circle height */
+  .regbutton_sl {
+    left: -5px;
   }
 }

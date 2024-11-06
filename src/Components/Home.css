@@ -1,4 +1,3 @@
-/* General Body Styling */
 body {
   margin: 0;
   height: 60vh;
@@ -6,7 +5,6 @@ body {
   background-size: cover;
 }
 
-/* Main Container Styling */
 .home-container {
   display: flex;
   flex-direction: column;
@@ -15,10 +13,9 @@ body {
   padding: 20px;
   background: url('https://github.com/Suke2004/CCA-RnD-website/blob/main/IMG-20241027-WA0163.jpg?raw=true') no-repeat center center fixed;
   background-size: cover;
-  flex: 1; /* Allow the home container to grow and fill available space */
+  flex: 1; 
 }
 
-/* Keyframes Animation */
 @keyframes gradientAnimation {
   0%, 100% {
     background-position: 0% 50%;
@@ -28,31 +25,28 @@ body {
   }
 }
 
-/* Main Content Styling */
 .main {
   display: flex;
-  flex-direction: column; /* Column layout for better responsiveness */
+  flex-direction: column; 
   align-items: center;
   gap: 0;
   backdrop-filter: blur(10px);
   border-radius: 30px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 0 10px 15px rgba(0, 0, 0, 0.3);
   padding: 60px;
-  margin: 30px 0; /* Adjust margin if needed */
+  margin: 30px 0; 
   width: 90%;
   max-width: 700px;
   color: #ffffff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover Effect */
 .main:hover {
   transform: translateY(-5px);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6), 0 15px 20px rgba(0, 0, 0, 0.5);
   animation: pulse 1.5s infinite;
 }
 
-/* Pulse Animation */
 @keyframes pulse {
   0%, 100% {
     transform: scale(1);
@@ -62,7 +56,6 @@ body {
   }
 }
 
-/* Heading Styling */
 .heading {
   display: flex;
   flex-direction: column;
@@ -70,7 +63,7 @@ body {
 }
 
 .heading h1 {
-  font-size: 3rem; /* Font size adjusted for better scaling */
+  font-size: 3rem; 
   font-weight: 700;
   font-family: sans-serif;
   color: #ffffff;
@@ -80,21 +73,20 @@ body {
 }
 
 .heading p {
-  font-size: 1.3rem; /* Font size maintained for readability */
+  font-size: 1.4rem;
   font-family: sans-serif;
   color: #afbecb;
   margin-top: 20px;
   width: 100%;
 }
 
-/* Countdown Section Styling */
 .count {
   backdrop-filter: blur(5px);
   background: rgba(19, 18, 18, 0.7);
   margin-top: 30px;
   padding: 20px;
   width: 100vw;
-  height: auto; /* Corrected height */
+  height: auto; 
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -111,15 +103,15 @@ body {
 
 @media (max-width: 768px) {
   .heading h1 {
-    font-size: 2.5rem; /* Responsive font size */
+    font-size: 2.5rem;
   }
   
   .heading p {
-    font-size: 1.1rem; /* Adjust paragraph size for smaller screens */
+    font-size: 1.1rem; 
   }
 
   .main {
-    padding: 40px; /* Reduce padding for smaller screens */
+    padding: 40px; 
   }
 
   .countdown h1 {
@@ -129,15 +121,15 @@ body {
 
 @media (max-width: 480px) {
   .heading h1 {
-    font-size: 2.3rem; /* Further responsive font size */
+    font-size: 2.3rem; 
   }
 
   .heading p {
-    font-size: 0.9rem; /* Further adjust paragraph size */
+    font-size: 0.9rem; 
   }
 
   .main {
-    padding: 23px; /* Further reduce padding */
+    padding: 23px; 
   }
 
   .count {

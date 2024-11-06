@@ -12,60 +12,56 @@ import './Footer.css';
 
 export const Footer = () => {
   return (
-    <div className="wrapper">
-      <div className="main-content">
-        {/* Your main content goes here */}
-      </div>
-      <footer className="footer">
-        <div className="footer-content">
-          <div className="footer-section-social">
-            <div className="footer-brand">
-              <a href="/" className="flex items-center">
-                <img src="https://swarajjaiswal.github.io/saeevents/logo.png" alt="Logo" className="h-12" />
-              </a>
-            </div>
-            <h2>Follow Us</h2>
-            <div className='social-icon'>
-              <FaFacebook className='icon-facebook'/>
-              <GrLinkedin className='icon-linkedin'/>
-              <IoLogoYoutube className='icon-youtube'/>
-              <FiInstagram className='icon-instagram'/>
-            </div>
-          </div>
-          
-          <div className="footer-section-links">
-            <h2>Useful Links</h2>
-            <ul>
-              <li>
-                <LiaHomeSolid className="icon-home" />
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <IoInformationCircleOutline className="icon-about"/>
-                <a href="/about">About</a>
-              </li>
-              <li>
-                <LuNewspaper className="icon-register"/><a href="">Register</a>
-              </li>
-            </ul>
-          </div>
+    <footer className="footer">
+      <div className="footer-content">
 
-          <div className="footer-section-contact">
-            <h2>Contact Us</h2>
-            <div className="location-container">
-              <FaLocationDot className="icon-location" />
-              <div className="address-content">
-                <p>Mahatma Gandhi Avenue A-zone</p>
-                <p>Durgapur, West Bengal, 713209</p>
-              </div>
+      <div className="footer-section-social">
+          <div className="footer-brand">
+            <a href="/" className="flex items-center">
+              <img src="https://swarajjaiswal.github.io/saeevents/logo.png" alt="Logo" className="h-12" />
+            </a>
+          </div>
+          <h2>Follow Us</h2>
+          <div className='social-icon'>
+            <a href="https://www.facebook.com/SAENITD/"><FaFacebook className='icon-facebook'/></a>
+            <a href="https://www.linkedin.com/company/sae-nitdgp/posts/?feedView=all"><GrLinkedin className='icon-linkedin'/></a>
+            <a href="https://www.youtube.com/@saenitdgp"><IoLogoYoutube className='icon-youtube'/></a>
+            <a href="https://www.instagram.com/sae.nitd/"><FiInstagram className='icon-instagram'/></a>
+          </div>
+        </div>  
+      
+        <div className="footer-section-links">
+          <h2>Useful Links</h2>
+          <ul>
+            <li>
+              <LiaHomeSolid className="icon-home" />
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <IoInformationCircleOutline className="icon-about"/>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <LuNewspaper className="icon-register"/><a href="/register">Register</a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="footer-section-contact">
+          <h2>Contact Us</h2>
+          <div className="location-container">
+            <FaLocationDot className="icon-location" />
+            <div className="address-content">
+              <p>Mahatma Gandhi Avenue A-zone</p>
+              <p>Durgapur, West Bengal, 713209</p>
             </div>
-            <div className="email-container">
-              <TbMailFilled className="icon-message" />
-              <span>saeindia@nitdgp.ac.in </span>
-            </div>
+          </div>
+          <div className="email-container">
+            <TbMailFilled className="icon-message" />
+            <a href="https://saenitd.in/"><span>saeindia@nitdgp.ac.in</span></a>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   );
 };
