@@ -5,9 +5,9 @@ const About = () => {
     return (
         <div className="about-container">
             <div className="content">
-                <h1 className="about-title">About Ai/ML</h1>
+                <h1 className="about-title">About ML</h1>
                 <p className="about-text">
-                Artificial Intelligence and Machine Learning are rapidly evolving fields that empower computers to learn from data, recognize patterns, and make decisions with minimal human intervention. These technologies are reshaping industries, enhancing efficiency, and driving innovation.
+                Machine Learning is a rapidly evolving field that empower computers to learn from data, recognize patterns, and make decisions with minimal human intervention. These technologies are reshaping industries, enhancing efficiency, and driving innovation.
                 
                 Artificial Intelligence (AI) and Machine Learning (ML) are interconnected fields aimed at developing systems that can perform tasks typically requiring human intelligence.
 
