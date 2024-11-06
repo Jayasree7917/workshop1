@@ -5,9 +5,9 @@ const About = () => {
     return (
         <div className="about-container">
             <div className="content">
-                <h1 className="about-title">About Ai/ML</h1>
+                <h1 className="about-title">About ML</h1>
                 <p className="about-text">
-                Artificial Intelligence and Machine Learning are rapidly evolving fields that empower computers to learn from data, recognize patterns, and make decisions with minimal human intervention. These technologies are reshaping industries, enhancing efficiency, and driving innovation.
+                Machine Learning is a rapidly evolving field that empower computers to learn from data, recognize patterns, and make decisions with minimal human intervention. This technology are reshaping industries, enhancing efficiency, and driving innovation.
                 
                 Artificial Intelligence (AI) and Machine Learning (ML) are interconnected fields aimed at developing systems that can perform tasks typically requiring human intelligence.
 
@@ -35,7 +35,7 @@ By the end of the day, participants will have a solid understanding of basic AI/
                 <div className="day">
                     <div className="about-circle">Day 2</div>
                     <p className="day-description">
-                    Day 2 brings hands-on training in Convolutional Neural Networks (CNN) and practical implementation of machine learning models, capped with an introduction to the YOLO object detection application. With expert-led sessions, real-time doubt resolution, and interactive quizzes, this workshop ensures a thorough, beginner-friendly understanding of AI and ML essentials. Perfectly structured for newcomers, it’s a valuable step towards mastering these transformative technologies. Thus concluding our 2 day workshop
+                    Day 2 brings hands-on training in Convolutional Neural Networks (CNN) and practical implementation of machine learning models, capped with an introduction to the YOLO object detection application. With expert-led sessions, real-time doubt resolution, and interactive quizzes, this workshop ensures a thorough, beginner-friendly understanding of AI and ML essentials. Perfectly structured for newcomers, it’s a valuable step towards mastering these transformative technologies. Thus concluding our 2 day workshop
                     </p>
                 </div>
             </div>
