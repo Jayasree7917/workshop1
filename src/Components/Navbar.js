@@ -32,7 +32,7 @@ export const Navbar = () => {
       <div className={`navbar-menu ${isOpen ? 'open' : ''}`}>
         <ul>
           <li>
-            <NavLink to="/" activeClassName="active" className="button" onClick={closeMenu}>
+            <NavLink to="/worksop1" activeClassName="active" className="button" onClick={closeMenu}>
               Home
             </NavLink>
           </li>
