@@ -208,18 +208,24 @@ body {
     }
 
     
-.about-cards-container {
+/*.about-cards-container {
     align-items: center;
     justify-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     gap: 20px; 
     margin-bottom: 20px;
+}*/
+
+.about-cards-container{
+    align-items: center;
+    width: 100%;
+    justify-items: center;
 }
 
 
 .about-card {
-    width: 80%;
+    width: 42%;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

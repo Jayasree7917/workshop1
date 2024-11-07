@@ -1,6 +1,5 @@
 import React from 'react';
 import './About.css';
-import ml1 from '../assets/ml1.jpg';
 import ml2 from '../assets/ml2.jpg';
 
 
@@ -16,10 +15,7 @@ const About = () => {
 
                 <div className="about-cards-container">
                     <div className="about-card">
-                        <img src= {ml1} alt="Card 1" className="card-image"/>
-                    </div>
-                    <div className="about-card">
-                        <img src= {ml2} alt="Card 2" className="card-image"/>
+                        <img src= {ml2} alt="Card 1" className="card-image"/>
                     </div>
                 </div>
 
