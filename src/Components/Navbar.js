@@ -21,7 +21,7 @@ export const Navbar = () => {
         </a>
       </div>
       
-      
+      {/* Hamburger Menu Icon */}
       <div className="ham" onClick={toggleMenu}>
         <span className={`bar ${isOpen ? 'open' : ''}`}></span>
         <span className={`bar ${isOpen ? 'open' : ''}`}></span>
