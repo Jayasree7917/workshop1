@@ -4,7 +4,7 @@ import Timer from './Timer';
 import SpaceButton from './SpaceButton';
 
 export const Home = () => {
-  const targetDate = '2024-11-08T09:00:00';
+  const targetDate = '2024-11-09T10:00:00';
 
   return (
     <div className="home-container">
@@ -14,7 +14,7 @@ export const Home = () => {
           <h1>MACHINE LEARNING</h1>
           <h1>WORKSHOP</h1>
           <p>
-            AIML enables the creation of intelligent chatbots that 
+            AI/ML enables the creation of intelligent chatbots that 
             facilitate natural conversations and structured responses.
           </p>
         </div>

@@ -18,6 +18,7 @@ body {
 }
 
 .about-title {
+    margin-top: 50px;
     font-weight: bold;
     color: rgb(78, 78, 174);
     font-size: 3em;
@@ -27,7 +28,7 @@ body {
 .about-text {
     font-size: 1.2em;
     line-height: 1.5;
-    margin: 20px 50px 20px 50px;
+    margin: 20px 50px 80px 50px;
 }
 
 .animated-line {
@@ -154,7 +155,7 @@ body {
 
 /* Media Query for small screens */
 @media (max-width: 768px) {
-    
+
     .days-section {
         flex-direction: column; 
         align-items: center; 
@@ -196,7 +197,54 @@ body {
     }
 
     .about-container{
-        padding: 30px;
+        margin: 0;
+        padding: 10px;
     }
+    .about-text{
+        margin-bottom: 50px;
+    }
+    
 
     }
+
+    
+.about-cards-container {
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    margin-bottom: 20px;
+}
+
+
+.about-card {
+    width: 80%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.about-card-image {
+    width: 70%;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    .about-cards-container {
+        grid-template-columns: 1fr;
+        justify-items: center; 
+    }
+
+    .about-card {
+        width: 80%; 
+        margin-bottom: 20px; 
+    }
+}

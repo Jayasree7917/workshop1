@@ -1,5 +1,9 @@
 import React from 'react';
 import './About.css';
+import ml1 from '../assets/ml1.jpg';
+import ml2 from '../assets/ml2.jpg';
+
+
 
 const About = () => {
     return (
@@ -7,36 +11,32 @@ const About = () => {
             <div className="content">
                 <h1 className="about-title">About ML</h1>
                 <p className="about-text">
-                Machine Learning is a rapidly evolving field that empower computers to learn from data, recognize patterns, and make decisions with minimal human intervention. This technology are reshaping industries, enhancing efficiency, and driving innovation.
-                
-                Artificial Intelligence (AI) and Machine Learning (ML) are interconnected fields aimed at developing systems that can perform tasks typically requiring human intelligence.
-
-AI encompasses the broader concept of machines carrying out smart tasks such as problem-solving, natural language understanding, pattern recognition, and decision-making.
-
-
+                Machine learning is a transformative technology shaping the future across numerous fields, from healthcare and finance to entertainment and beyond. By enabling systems to learn from data, it drives innovation and efficiency, allowing for personalized experiences, advanced automation, and predictive insights. As industries increasingly rely on data-driven decisions, skills in machine learning open up vast opportunities. Hands-on experience in this domain is essential, as it bridges theoretical knowledge with real-world application. Guided by skilled mentors, learners can build confidence and expertise, navigating challenges and developing practical skills that are crucial for a successful career in this high-impact field.
                 </p>
-                <p className="about-text">
-                Machine Learning, a subset of Artificial Intelligence, focuses specifically on creating algorithms that enable computers to learn from and make predictions based on data without being explicitly programmed for each task.
 
-Together, AI and ML are pivotal in advancing applications across various sectors, including healthcare, finance, autonomous vehicles, and personalized recommendations.
-                </p>
+                <div className="about-cards-container">
+                    <div className="about-card">
+                        <img src= {ml1} alt="Card 1" className="card-image"/>
+                    </div>
+                    <div className="about-card">
+                        <img src= {ml2} alt="Card 2" className="card-image"/>
+                    </div>
+                </div>
+
                 <div className="animated-line"></div>
             </div>
             <div className="days-section">
                 <div className="day">
                     <div className="about-circle">Day 1</div>
                     <p className="day-description">
-                    Day 1 introduced the fundamentals of Artificial Intelligence and Machine Learning, exploring key concepts and real-world applications, setting a strong foundation for further learning. This SAE workshop offers an immersive journey into Artificial Intelligence and Machine Learning over two insightful days. Participants will start with essential Python programming skills, progressing to fundamental concepts in AI and ML. 
-
-By the end of the day, participants will have a solid understanding of basic AI/ML principles and how they apply to real-world problems.
+                    The workshop begins with an in-depth introduction to Python programming, covering everything from basic syntax to practical applications, crafted specifically for beginners. Participants will gain a strong grasp of Python fundamentals and will be introduced to core Machine Learning concepts, building a solid foundation for future AI work. This session provides essential skills and insights, setting the stage for more advanced learning in the next session.
                 </p>
                 </div>
                 <div className="line" />
                 <div className="day">
                     <div className="about-circle">Day 2</div>
                     <p className="day-description">
-                    Day 2 brings hands-on training in Convolutional Neural Networks (CNN) and practical implementation of machine learning models, capped with an introduction to the YOLO object detection application. With expert-led sessions, real-time doubt resolution, and interactive quizzes, this workshop ensures a thorough, beginner-friendly understanding of AI and ML essentials. Perfectly structured for newcomers, it’s a valuable step towards mastering these transformative technologies. Thus concluding our 2 day workshop
-                    </p>
+                    Participants will delve into the practical implementation of Machine Learning, developing simple projects under supervision, experience hands-on training, applying their newly acquired knowledge to real-world scenarios with guidance from SAE Club members. This interactive session ensures participants leave with practical skills and a sense of accomplishment. E-certificates will be awarded to all attendees, recognizing their participation and learning.  </p>
                 </div>
             </div>
         </div>
