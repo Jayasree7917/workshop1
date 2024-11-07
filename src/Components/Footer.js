@@ -35,7 +35,7 @@ export const Footer = () => {
           <ul>
             <li>
             <LiaHomeSolid className="icon-home" />
-            <Link to="/workshop1">Home</Link>
+            <Link to="/">Home</Link>
             </li>
             <li>
             <LiaHomeSolid className="icon-home" />
