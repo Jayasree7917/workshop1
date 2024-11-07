@@ -42,9 +42,23 @@ export const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/register" activeClassName="active" className="button" onClick={closeMenu}>
-              Register
-            </NavLink>
+          <NavLink
+            to="#"
+            activeClassName="active"
+            className="button"
+            onClick={(e) => {
+              e.preventDefault(); // Prevents the default behavior of NavLink
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSdi0pQU4D_4i2UBk1brPG9NL-K5TmA3I276aq8Q5NQUlnm9fw/viewform?usp=sf_link",
+                "_blank",
+                "noopener,noreferrer"
+              );
+              closeMenu();
+            }}
+          >
+            Register
+          </NavLink>
+
           </li>
         </ul>
       </div>

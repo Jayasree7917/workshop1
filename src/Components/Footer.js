@@ -42,7 +42,7 @@ export const Footer = () => {
               <a href="/about">About</a>
             </li>
             <li>
-              <LuNewspaper className="icon-register"/><a href="/register">Register</a>
+              <LuNewspaper className="icon-register"/><a href="https://docs.google.com/forms/d/e/1FAIpQLSdi0pQU4D_4i2UBk1brPG9NL-K5TmA3I276aq8Q5NQUlnm9fw/viewform?usp=sf_link" target='_blank' without rel="noreferrer">Register</a>
             </li>
           </ul>
         </div>

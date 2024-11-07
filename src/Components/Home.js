@@ -23,7 +23,9 @@ export const Home = () => {
       {/* SpaceButton */}
 
       <section className="button-section">
+        <a href='https://docs.google.com/forms/d/e/1FAIpQLSdi0pQU4D_4i2UBk1brPG9NL-K5TmA3I276aq8Q5NQUlnm9fw/viewform?usp=sf_link' target="_blank" without rel="noreferrer">
         <SpaceButton />
+        </a>
       </section>
       
       {/* Countdown Timer */}

@@ -13,7 +13,7 @@ body {
   padding: 20px;
   background: url('https://github.com/Suke2004/CCA-RnD-website/blob/main/IMG-20241027-WA0163.jpg?raw=true') no-repeat center center fixed;
   background-size: cover;
-  flex: 1; 
+  flex: 1;
 }
 
 @keyframes gradientAnimation {
